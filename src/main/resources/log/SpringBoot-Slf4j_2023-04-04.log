@@ -1,0 +1,14 @@
+2023-04-04 14:18:49.488 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ruibin.SimpleBlogApplicationTests]: SimpleBlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-04 14:18:49.581 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ruibin.SimpleBlogApplication for test class com.ruibin.SimpleBlogApplicationTests
+2023-04-04 14:18:49.915 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-04 14:18:49.936 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Starting SimpleBlogApplicationTests using Java 17.0.1 with PID 28916 (started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-04 14:18:49.937 [main] INFO  com.ruibin.SimpleBlogApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-04-04 14:18:52.113 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-04 14:18:52.792 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Started SimpleBlogApplicationTests in 3.077 seconds (process running for 4.009)
+2023-04-04 14:35:34.271 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ruibin.SimpleBlogApplicationTests]: SimpleBlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-04 14:35:34.363 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ruibin.SimpleBlogApplication for test class com.ruibin.SimpleBlogApplicationTests
+2023-04-04 14:35:34.715 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-04 14:35:34.736 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Starting SimpleBlogApplicationTests using Java 17.0.1 with PID 26444 (started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-04 14:35:34.736 [main] INFO  com.ruibin.SimpleBlogApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-04-04 14:35:37.123 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-04 14:35:37.759 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Started SimpleBlogApplicationTests in 3.242 seconds (process running for 4.201)

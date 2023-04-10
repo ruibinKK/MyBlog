@@ -1,0 +1,74 @@
+2023-04-10 11:59:22.880 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-10 11:59:22.909 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 18640 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-10 11:59:22.909 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-10 11:59:23.954 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-10 11:59:23.960 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-10 11:59:23.960 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-10 11:59:23.960 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 11:59:24.023 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-10 11:59:24.023 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1085 ms
+2023-04-10 11:59:24.562 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-10 11:59:24.827 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-10 11:59:24.840 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 11:59:24.846 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.267 seconds (process running for 3.075)
+2023-04-10 11:59:49.636 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 11:59:49.637 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-10 11:59:49.638 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-10 11:59:49.661 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-10 11:59:49.702 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-10 11:59:49.804 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11f1fe69
+2023-04-10 11:59:49.806 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-10 11:59:49.864 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-10 11:59:50.171 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 11:59:50.180 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:04:59.944 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-10 12:04:59.949 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-10 12:05:02.266 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-10 12:05:02.286 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 16408 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-10 12:05:02.288 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-10 12:05:03.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-10 12:05:03.122 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-10 12:05:03.123 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-10 12:05:03.123 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 12:05:03.187 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-10 12:05:03.187 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 873 ms
+2023-04-10 12:05:03.680 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-10 12:05:03.937 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-10 12:05:03.950 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 12:05:03.957 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 1.918 seconds (process running for 2.492)
+2023-04-10 12:05:06.916 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 12:05:06.916 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-10 12:05:06.918 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-04-10 12:05:06.940 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-10 12:05:06.980 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-10 12:05:07.062 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1085afa6
+2023-04-10 12:05:07.064 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-10 12:05:07.105 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-10 12:05:07.379 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:05:07.382 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:05:25.283 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/types/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.TypeShowController.types, args=[1, -1, {}])
+2023-04-10 12:05:25.291 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:site/types
+2023-04-10 12:05:25.352 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:05:25.355 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:05:29.278 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/picture, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.PictureShowController.friends, args=[{}])
+2023-04-10 12:05:29.291 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Result:site/picture
+2023-04-10 12:05:29.353 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:05:29.356 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:05:33.363 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/archives, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.ArchiveShowController.archive, args=[{}])
+2023-04-10 12:05:33.373 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/archives
+2023-04-10 12:05:33.434 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:05:33.438 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:05:35.617 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/about, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.AboutShowController.about, args=[])
+2023-04-10 12:05:35.617 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:site/aboutme
+2023-04-10 12:05:35.677 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:05:35.680 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:05:41.439 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-10 12:05:41.445 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-10 12:05:41.496 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:05:41.499 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:08:37.373 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-10 12:08:37.382 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-10 12:08:37.453 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-10 12:08:37.456 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-10 12:09:10.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-10 12:09:10.668 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

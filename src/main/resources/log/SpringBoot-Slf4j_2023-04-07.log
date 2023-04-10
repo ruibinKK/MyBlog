@@ -1,0 +1,7 @@
+2023-04-07 15:50:59.117 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ruibin.SimpleBlogApplicationTests]: SimpleBlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-07 15:50:59.211 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ruibin.SimpleBlogApplication for test class com.ruibin.SimpleBlogApplicationTests
+2023-04-07 15:50:59.636 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-07 15:50:59.664 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Starting SimpleBlogApplicationTests using Java 17.0.1 with PID 34464 (started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-07 15:50:59.665 [main] INFO  com.ruibin.SimpleBlogApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-04-07 15:51:02.288 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-07 15:51:03.048 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Started SimpleBlogApplicationTests in 3.683 seconds (process running for 4.692)

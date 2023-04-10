@@ -1,0 +1,1524 @@
+2023-04-05 15:17:15.457 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:17:15.492 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 24088 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:17:15.493 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:17:16.433 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:17:16.439 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:17:16.440 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:17:16.440 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:17:16.504 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:17:16.504 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+2023-04-05 15:17:16.992 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:17:17.246 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:17:17.257 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:17:17.264 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.05 seconds (process running for 2.794)
+2023-04-05 15:17:26.452 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:17:26.453 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:17:26.453 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-05 15:17:26.480 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 15:17:26.523 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:17:26.620 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22117df3
+2023-04-05 15:17:26.622 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:17:26.664 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 15:17:26.955 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:17:26.959 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:17:29.002 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:17:29.033 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:17:29.143 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:17:29.145 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:18:38.300 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:18:38.304 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:18:38.430 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:18:38.435 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:27:28.841 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:27:28.845 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:27:32.055 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:27:32.076 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 24292 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:27:32.076 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:27:32.990 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:27:32.997 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:27:32.998 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:27:32.999 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:27:33.059 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:27:33.059 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 948 ms
+2023-04-05 15:27:33.564 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:27:33.794 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:27:33.804 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:27:33.811 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.062 seconds (process running for 2.863)
+2023-04-05 15:27:39.549 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:27:39.550 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:27:39.550 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-05 15:27:39.571 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:27:39.583 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:27:39.660 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e5d6576
+2023-04-05 15:27:39.662 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:27:39.708 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:27:40.078 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:27:40.082 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:28:53.999 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:28:54.003 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:28:54.182 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:28:54.184 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:34:25.371 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:34:25.377 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:34:27.965 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:34:27.990 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 24392 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:34:27.991 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:34:29.018 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:34:29.023 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:34:29.024 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:34:29.024 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:34:29.106 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:34:29.106 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1070 ms
+2023-04-05 15:34:29.555 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:34:29.789 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:34:29.800 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:34:29.807 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.242 seconds (process running for 3.042)
+2023-04-05 15:34:32.823 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:34:32.823 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:34:32.824 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 15:34:32.844 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:34:32.858 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:34:32.943 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72b258d2
+2023-04-05 15:34:32.944 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:34:32.995 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:34:33.356 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:34:33.362 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:38:00.779 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:38:00.783 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:38:03.273 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:38:03.295 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 17364 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:38:03.296 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:38:04.396 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:38:04.402 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:38:04.402 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:38:04.402 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:38:04.463 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:38:04.464 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1106 ms
+2023-04-05 15:38:04.920 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:38:05.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:38:05.190 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:38:05.197 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.157 seconds (process running for 2.988)
+2023-04-05 15:38:07.509 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:38:07.509 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:38:07.509 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-05 15:38:07.532 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:38:07.545 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:38:07.619 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ec9115
+2023-04-05 15:38:07.620 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:38:07.669 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:38:08.019 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:38:08.025 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:38:12.058 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=, email=, content=asdqawe, avatar=null, creatTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, creatTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@347761a5, {comment=Comment(id=null, nickname=, email=, content=asdqawe, avatar=null, creatTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, creatTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 15:38:12.065 [http-nio-8080-exec-3] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/comments, Exception:{}
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy76.saveComment(Unknown Source)
+	at com.ruibin.service.Impl.CommentServiceImpl.saveComment(CommentServiceImpl.java:74)
+	at com.ruibin.controller.CommentController.post(CommentController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.ruibin.controller.CommentController$$SpringCGLIB$$0.post(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'createTime' in 'class com.ruibin.pojo.Comment'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:387)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy86.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 80 common frames omitted
+2023-04-05 15:39:57.460 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:39:57.464 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:40:00.494 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:40:00.524 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 12436 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:40:00.525 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:40:01.305 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:40:01.310 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:40:01.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:40:01.311 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:40:01.363 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:40:01.363 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 803 ms
+2023-04-05 15:40:01.784 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:40:02.016 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:40:02.028 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:40:02.035 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 1.792 seconds (process running for 2.668)
+2023-04-05 15:40:03.916 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:40:03.916 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:40:03.917 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 15:40:03.973 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=, email=, content=asdqawe, avatar=null, creatTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, creatTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@435ac028, {comment=Comment(id=null, nickname=, email=, content=asdqawe, avatar=null, creatTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, creatTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 15:40:03.986 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:40:04.060 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67d3cc58
+2023-04-05 15:40:04.062 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:40:04.076 [http-nio-8080-exec-1] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/comments, Exception:{}
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy76.saveComment(Unknown Source)
+	at com.ruibin.service.Impl.CommentServiceImpl.saveComment(CommentServiceImpl.java:74)
+	at com.ruibin.controller.CommentController.post(CommentController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.ruibin.controller.CommentController$$SpringCGLIB$$0.post(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'createTime' in 'class com.ruibin.pojo.Comment'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:387)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 80 common frames omitted
+2023-04-05 15:40:13.699 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:40:13.736 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:40:13.872 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:40:13.879 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:40:16.671 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=, email=, content=asd, avatar=null, creatTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, creatTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@435ac028, {comment=Comment(id=null, nickname=, email=, content=asd, avatar=null, creatTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, creatTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 15:40:16.673 [http-nio-8080-exec-4] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/comments, Exception:{}
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy76.saveComment(Unknown Source)
+	at com.ruibin.service.Impl.CommentServiceImpl.saveComment(CommentServiceImpl.java:74)
+	at com.ruibin.controller.CommentController.post(CommentController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.ruibin.controller.CommentController$$SpringCGLIB$$0.post(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'createTime' in 'class com.ruibin.pojo.Comment'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:387)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 80 common frames omitted
+2023-04-05 15:41:04.243 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:41:04.247 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:41:18.106 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:41:18.128 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 23944 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:41:18.129 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:41:18.869 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:41:18.874 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:41:18.874 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:41:18.874 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:41:18.931 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:41:18.932 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 778 ms
+2023-04-05 15:41:19.366 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:41:19.600 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:41:19.617 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:41:19.624 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 1.724 seconds (process running for 2.18)
+2023-04-05 15:41:23.621 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:41:23.622 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:41:23.623 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 15:41:23.684 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=, email=, content=asd, avatar=null, createTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@4ade0553, {comment=Comment(id=null, nickname=, email=, content=asd, avatar=null, createTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 15:41:23.699 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:41:23.783 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@784545
+2023-04-05 15:41:23.784 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:41:23.818 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 15:41:29.094 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=, email=, content=asd, avatar=null, createTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@4ade0553, {comment=Comment(id=null, nickname=, email=, content=asd, avatar=null, createTime=null, blogId=10, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 15:41:29.107 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 15:41:37.646 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 15:41:37.686 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 15:41:37.884 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:41:37.886 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:41:41.495 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:41:41.519 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:41:41.620 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:41:41.624 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:45:40.435 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:45:40.441 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:45:42.994 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:45:43.019 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 32216 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:45:43.021 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:45:44.180 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:45:44.185 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:45:44.185 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:45:44.185 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:45:44.248 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:45:44.249 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1197 ms
+2023-04-05 15:45:44.716 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:45:44.967 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:45:44.982 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:45:44.990 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.245 seconds (process running for 3.009)
+2023-04-05 15:45:47.470 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:45:47.470 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:45:47.471 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 15:45:47.493 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 15:45:47.530 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:45:47.611 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4477ec57
+2023-04-05 15:45:47.613 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:45:47.655 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 15:45:47.989 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:45:47.991 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:45:48.612 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:45:48.641 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:45:48.754 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:45:48.756 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:46:33.891 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:46:33.895 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:46:36.544 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:46:36.565 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 34340 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:46:36.566 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:46:37.561 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:46:37.566 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:46:37.567 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:46:37.567 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:46:37.623 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:46:37.624 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1032 ms
+2023-04-05 15:46:38.079 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:46:38.320 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:46:38.333 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:46:38.340 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.014 seconds (process running for 2.743)
+2023-04-05 15:46:38.385 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:46:38.386 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:46:38.386 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-05 15:46:38.416 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=127.0.0.1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:46:38.437 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:46:38.515 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f295ce
+2023-04-05 15:46:38.516 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:46:38.561 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:46:38.778 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "site/blog": Exception evaluating SpringEL expression: "blog.commentabled" (template: "site/blog" - line 472, col 50)
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.commentabled" (template: "site/blog" - line 472, col 50)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'commentabled' cannot be found on object of type 'com.ruibin.queryvo.DetailedBlog' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:405)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 60 common frames omitted
+2023-04-05 15:46:38.781 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.commentabled" (template: "site/blog" - line 472, col 50)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'commentabled' cannot be found on object of type 'com.ruibin.queryvo.DetailedBlog' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:405)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 15:47:37.989 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:47:37.993 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:47:41.029 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:47:41.048 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 24840 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:47:41.049 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:47:42.107 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:47:42.113 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:47:42.114 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:47:42.114 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:47:42.175 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:47:42.175 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1103 ms
+2023-04-05 15:47:42.643 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:47:42.892 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:47:42.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:47:42.910 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.115 seconds (process running for 3.083)
+2023-04-05 15:47:44.497 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:47:44.498 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:47:44.498 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-05 15:47:44.517 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:47:44.531 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:47:44.612 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f295ce
+2023-04-05 15:47:44.614 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:47:44.657 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:47:44.986 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:47:44.991 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:48:01.932 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:48:01.936 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:48:01.977 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:48:01.980 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:48:07.096 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:48:07.105 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:48:07.189 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:48:07.193 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:48:21.570 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 15:48:21.606 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 15:48:21.829 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:48:21.834 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:48:27.000 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/9, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[9, {}])
+2023-04-05 15:48:27.006 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:48:27.088 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:48:27.090 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:54:28.428 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:54:28.432 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:54:31.692 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:54:31.717 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 29224 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:54:31.717 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:54:32.472 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:54:32.477 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:54:32.478 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:54:32.478 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:54:32.534 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:54:32.534 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 792 ms
+2023-04-05 15:54:32.984 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:54:33.224 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:54:33.239 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:54:33.246 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 1.754 seconds (process running for 2.269)
+2023-04-05 15:54:44.001 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:54:44.001 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:54:44.002 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 15:54:44.026 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 15:54:44.065 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:54:44.146 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ccd419a
+2023-04-05 15:54:44.147 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:54:44.192 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 15:54:44.454 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:54:44.457 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:54:46.479 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:54:46.503 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:54:46.617 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:54:46.620 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:56:44.191 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 15:56:44.195 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 15:56:47.192 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 15:56:47.232 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 13144 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 15:56:47.233 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 15:56:48.105 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 15:56:48.109 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:56:48.110 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 15:56:48.110 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 15:56:48.167 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 15:56:48.167 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 876 ms
+2023-04-05 15:56:48.616 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 15:56:48.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 15:56:48.898 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 15:56:48.906 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.22 seconds (process running for 3.287)
+2023-04-05 15:56:49.137 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 15:56:49.137 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 15:56:49.138 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 15:56:49.161 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/10, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[10, {}])
+2023-04-05 15:56:49.175 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 15:56:49.269 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f295ce
+2023-04-05 15:56:49.271 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 15:56:49.318 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:56:49.616 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:56:49.627 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:58:52.431 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 15:58:52.437 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 15:58:52.572 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:58:52.576 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:58:55.690 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 15:58:55.695 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:58:55.801 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:58:55.804 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 15:59:25.875 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 15:59:25.885 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 15:59:25.980 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 15:59:25.983 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:02:12.876 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:02:12.879 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:02:23.375 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:02:23.401 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 34944 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:02:23.402 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:02:24.308 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:02:24.314 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:02:24.315 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:02:24.315 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:02:24.375 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:02:24.376 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 941 ms
+2023-04-05 16:02:24.853 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:02:25.152 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:02:25.165 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:02:25.172 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.119 seconds (process running for 3.146)
+2023-04-05 16:02:32.459 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:02:32.460 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:02:32.461 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 16:02:32.483 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 16:02:32.524 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:02:32.602 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76fc7f39
+2023-04-05 16:02:32.603 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:02:32.650 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 16:02:32.916 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:02:32.919 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:02:33.753 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:02:33.778 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:02:33.894 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:02:33.896 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:02:54.532 [http-nio-8080-exec-6] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/blog/11, Exception:{}
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 16:03:39.683 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:03:39.687 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:03:42.334 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:03:42.357 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 33536 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:03:42.358 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:03:43.514 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:03:43.519 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:03:43.519 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:03:43.519 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:03:43.578 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:03:43.579 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1192 ms
+2023-04-05 16:03:44.005 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:03:44.247 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:03:44.263 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:03:44.271 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.176 seconds (process running for 3.152)
+2023-04-05 16:03:46.432 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:03:46.432 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:03:46.433 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 16:03:46.454 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:03:46.466 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:03:46.541 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380be216
+2023-04-05 16:03:46.543 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:03:46.587 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:03:46.837 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:03:46.840 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:03:57.984 [http-nio-8080-exec-3] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/blog/11, Exception:{}
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 16:08:47.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:08:47.202 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:08:50.066 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:08:50.104 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 23932 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:08:50.106 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:08:51.220 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:08:51.225 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:08:51.226 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:08:51.227 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:08:51.280 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:08:51.280 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1131 ms
+2023-04-05 16:08:51.735 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:08:51.968 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:08:51.983 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:08:51.991 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.351 seconds (process running for 3.13)
+2023-04-05 16:08:53.561 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:08:53.561 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:08:53.562 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 16:08:53.583 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:08:53.596 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:08:53.669 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380be216
+2023-04-05 16:08:53.670 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:08:53.720 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:08:53.967 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:08:53.970 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:09:08.472 [http-nio-8080-exec-3] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/blog/11, Exception:{}
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 16:30:09.457 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:30:09.463 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:30:13.760 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:30:13.788 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 7008 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:30:13.789 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:30:14.678 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:30:14.684 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:30:14.684 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:30:14.684 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:30:14.748 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:30:14.749 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 926 ms
+2023-04-05 16:30:15.346 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:30:15.614 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:30:15.634 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:30:15.645 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.213 seconds (process running for 4.299)
+2023-04-05 16:30:22.426 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:30:22.426 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:30:22.426 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-05 16:30:22.448 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 16:30:22.493 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:30:22.576 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ce98cfb
+2023-04-05 16:30:22.578 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:30:22.616 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 16:30:22.970 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:30:22.977 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:30:25.178 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:30:25.401 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:30:25.522 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:30:25.525 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:30:36.277 [http-nio-8080-exec-5] ERROR com.ruibin.handler.ControllerExceptionHandler - Request URL:/blog/11, Exception:{}
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 16:31:07.576 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:31:07.581 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:31:07.626 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:31:07.630 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:31:35.620 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:31:35.625 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:31:35.710 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:31:35.714 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:31:57.413 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:31:57.419 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:31:57.649 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:31:57.654 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:40:25.461 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:40:25.465 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:40:27.597 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:40:27.616 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 8196 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:40:27.617 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:40:28.604 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:40:28.608 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:40:28.609 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:40:28.609 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:40:28.667 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:40:28.668 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1025 ms
+2023-04-05 16:40:29.117 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:40:29.371 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:40:29.384 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:40:29.391 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.01 seconds (process running for 2.575)
+2023-04-05 16:40:40.065 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:40:40.065 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:40:40.066 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 16:40:40.087 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:40:40.099 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:40:40.176 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380be216
+2023-04-05 16:40:40.177 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:40:40.225 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:40:40.437 [http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "site/blog": Exception evaluating SpringEL expression: "blog.getIsComment()" (template: "site/blog" - line 472, col 41)
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.getIsComment()" (template: "site/blog" - line 472, col 41)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1004E: Method call: Method getIsComment() cannot be found on type com.ruibin.queryvo.DetailedBlog
+	at org.springframework.expression.spel.ast.MethodReference.findAccessorForMethod(MethodReference.java:225)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:135)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:380)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 60 common frames omitted
+2023-04-05 16:40:40.440 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.getIsComment()" (template: "site/blog" - line 472, col 41)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1004E: Method call: Method getIsComment() cannot be found on type com.ruibin.queryvo.DetailedBlog
+	at org.springframework.expression.spel.ast.MethodReference.findAccessorForMethod(MethodReference.java:225)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:135)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:380)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 16:56:25.148 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:56:25.152 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:56:27.626 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:56:27.837 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 12436 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:56:27.840 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:56:29.327 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:56:29.332 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:56:29.332 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:56:29.333 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:56:29.385 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:56:29.387 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1265 ms
+2023-04-05 16:56:29.819 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:56:30.047 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:56:30.059 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:56:30.069 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.723 seconds (process running for 3.296)
+2023-04-05 16:56:32.690 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:56:32.691 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:56:32.692 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 16:56:32.713 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.index, args=[{}, 1, {}])
+2023-04-05 16:56:32.751 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:56:32.837 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c13d6f5
+2023-04-05 16:56:32.839 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:56:32.877 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:index
+2023-04-05 16:56:33.198 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:56:33.200 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:56:33.755 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:56:33.779 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:56:33.794 [http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "site/blog": Exception evaluating SpringEL expression: "blog.commentabled" (template: "site/blog" - line 474, col 50)
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.commentabled" (template: "site/blog" - line 474, col 50)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'commentabled' cannot be found on object of type 'com.ruibin.queryvo.DetailedBlog' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:405)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 60 common frames omitted
+2023-04-05 16:56:33.795 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.commentabled" (template: "site/blog" - line 474, col 50)] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'commentabled' cannot be found on object of type 'com.ruibin.queryvo.DetailedBlog' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:405)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-05 16:56:58.312 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 16:56:58.316 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 16:57:01.152 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 16:57:01.180 [main] INFO  com.ruibin.SimpleBlogApplication - Starting SimpleBlogApplication using Java 17.0.1 with PID 26024 (C:\Users\wang\Desktop\MyBlog\simpleBlog\target\classes started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 16:57:01.181 [main] INFO  com.ruibin.SimpleBlogApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 16:57:02.296 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 16:57:02.302 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:57:02.303 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-05 16:57:02.303 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-05 16:57:02.358 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-05 16:57:02.359 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1149 ms
+2023-04-05 16:57:02.780 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 16:57:03.009 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 16:57:03.019 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 16:57:03.026 [main] INFO  com.ruibin.SimpleBlogApplication - Started SimpleBlogApplication in 2.125 seconds (process running for 2.893)
+2023-04-05 16:57:05.838 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 16:57:05.838 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-05 16:57:05.839 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-05 16:57:05.861 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:57:05.873 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-05 16:57:05.947 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380be216
+2023-04-05 16:57:05.948 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-05 16:57:05.999 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:57:06.348 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:57:06.351 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:57:06.426 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.comments, args=[11, {}])
+2023-04-05 16:57:06.428 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:57:37.487 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:57:37.500 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:57:37.542 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:57:37.544 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:57:37.667 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.comments, args=[11, {}])
+2023-04-05 16:57:37.668 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:57:49.441 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=asd, email=319929944@qq.com, content=zasd, avatar=null, createTime=null, blogId=11, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@3439617f, {comment=Comment(id=null, nickname=asd, email=319929944@qq.com, content=zasd, avatar=null, createTime=null, blogId=11, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 16:57:49.454 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:57:54.209 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:57:54.219 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:57:54.261 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:57:54.263 [http-nio-8080-exec-9] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:57:54.381 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.comments, args=[11, {}])
+2023-04-05 16:57:54.383 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:58:39.087 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:58:39.092 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:58:39.248 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:58:39.252 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:58:39.355 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.comments, args=[11, {}])
+2023-04-05 16:58:39.359 [http-nio-8080-exec-4] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:58:53.594 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:58:53.605 [http-nio-8080-exec-5] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:58:53.688 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:58:53.691 [http-nio-8080-exec-6] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:58:53.890 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.comments, args=[11, {}])
+2023-04-05 16:58:53.893 [http-nio-8080-exec-7] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:59:18.721 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=asd, email=319929944@qq.com, content=@asd 测试, avatar=null, createTime=null, blogId=11, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=3, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@3439617f, {comment=Comment(id=null, nickname=asd, email=319929944@qq.com, content=@asd 测试, avatar=null, createTime=null, blogId=11, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=3, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 16:59:18.729 [http-nio-8080-exec-8] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:59:41.645 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/blog/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blog, args=[11, {}])
+2023-04-05 16:59:41.656 [http-nio-8080-exec-10] INFO  com.ruibin.aspect.LogAspect - Result:site/blog
+2023-04-05 16:59:41.787 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/footer/blogmessage, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.IndexController.blogMessage, args=[{}])
+2023-04-05 16:59:41.789 [http-nio-8080-exec-1] INFO  com.ruibin.aspect.LogAspect - Result:_fragements :: blogMessage
+2023-04-05 16:59:41.925 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments/11, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.comments, args=[11, {}])
+2023-04-05 16:59:41.929 [http-nio-8080-exec-2] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 16:59:56.218 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Request:LogAspect.RequestLog(url=http://localhost:8080/comments, ip=0:0:0:0:0:0:0:1, classMethod=com.ruibin.controller.CommentController.post, args=[Comment(id=null, nickname=123, email=319929944@qq.com, content=asdasdafqwe, avatar=null, createTime=null, blogId=11, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=3, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.apache.catalina.session.StandardSessionFacade@3439617f, {comment=Comment(id=null, nickname=123, email=319929944@qq.com, content=asdasdafqwe, avatar=null, createTime=null, blogId=11, parentCommentId=null, adminComment=false, replyComments=[], parentComment=Comment(id=3, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=false, replyComments=[], parentComment=null, parentNickname=null), parentNickname=null), org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2023-04-05 16:59:56.227 [http-nio-8080-exec-3] INFO  com.ruibin.aspect.LogAspect - Result:site/blog :: commentList
+2023-04-05 17:00:05.165 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-05 17:00:05.168 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-05 20:42:24.377 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ruibin.SimpleBlogApplicationTests]: SimpleBlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-05 20:42:24.490 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ruibin.SimpleBlogApplication for test class com.ruibin.SimpleBlogApplicationTests
+2023-04-05 20:42:24.924 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-05 20:42:24.948 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Starting SimpleBlogApplicationTests using Java 17.0.1 with PID 31928 (started by wang in C:\Users\wang\Desktop\MyBlog\simpleBlog)
+2023-04-05 20:42:24.949 [main] INFO  com.ruibin.SimpleBlogApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 20:42:27.748 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-04-05 20:42:28.613 [main] INFO  com.ruibin.SimpleBlogApplicationTests - Started SimpleBlogApplicationTests in 3.935 seconds (process running for 5.202)
